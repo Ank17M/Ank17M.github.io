@@ -1,52 +1,60 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: lightgray;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
 }
 
-.heading {
-    text-align: center;
-    font-size: 70px;
-    margin: 10px;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-.subheading {
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
-    font-size: 50px;
-    margin: 10px;
-    color: darkviolet;
 }
 
-table {
-    border: 10px inset darkviolet;
-    padding: 5px;
-    margin: 0 auto;
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+section#about {
+    background: #f4f4f4;
+}
+
+section#projects .project {
+    background: #e2e2e2;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
     width: 100%;
-}
-
-th {
-    border: 7px inset darkviolet;
-    padding: 5px;
-    background-color: violet;
-    font-size: 30px;
-} 
-
-td{
-    border: 5px inset violet ;
-    padding: 5px;
-    font-size: 20px;
-    font-weight: 1000;
-}
-
-.t1 {
-    margin: 30px;
-}
-
-.t2 {
-    margin: 30px;
+    bottom: 0;
 }
